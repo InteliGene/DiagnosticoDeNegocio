@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diagnosticodenegocio.Pantalla15Controller">
+   <children>
+      <AnchorPane prefHeight="800.0" prefWidth="1024.0">
+         <children>
+            <Label layoutX="128.0" layoutY="24.0" prefHeight="124.0" prefWidth="787.0" stylesheets="@EstiloGeneral.css" text="¿Sabe usted la cantidad de dinero necesario para completar un ciclo de produccion y los puntos de equilibrio por ciclo?" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <VBox layoutX="150.0" layoutY="148.0" prefHeight="200.0" prefWidth="549.0" styleClass="VBox" stylesheets="@EstiloGeneral.css">
+               <children>
+                  <RadioButton mnemonicParsing="false" stylesheets="@EstiloGeneral.css" text="Tiene modelo de produccion interactivo" />
+                  <RadioButton mnemonicParsing="false" stylesheets="@EstiloGeneral.css" text="Tiene modelo de produccion no interactivo" />
+                  <RadioButton mnemonicParsing="false" stylesheets="@EstiloGeneral.css" text="Tiene datos acerca de la produccion" />
+                  <RadioButton mnemonicParsing="false" stylesheets="@EstiloGeneral.css" text="No lleva registro" />
+               </children>
+            </VBox>
+            <Button layoutX="75.0" layoutY="600.0" mnemonicParsing="false" text="Anterior" />
+            <Button layoutX="770.0" layoutY="600.0" mnemonicParsing="false" onAction="#siguiente15" text="Siguiente" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

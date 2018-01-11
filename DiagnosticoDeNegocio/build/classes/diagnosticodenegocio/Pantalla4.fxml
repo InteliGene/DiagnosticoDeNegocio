@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diagnosticodenegocio.Pantalla4Controller">
+   <children>
+      <AnchorPane prefHeight="800.0" prefWidth="1024.0">
+         <children>
+            <Line endX="-100.0" endY="-170.0" layoutX="339.0" layoutY="400.0" startX="-100.0" startY="-100.0" style="-fx-stroke: gray;" />
+            <Label layoutX="207.0" layoutY="122.0" stylesheets="@EstiloGeneral.css" text="¿Como les hace saber de su producto?">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <VBox layoutX="228.0" layoutY="217.0" prefHeight="200.0" prefWidth="414.0" styleClass="VBox" stylesheets="@EstiloGeneral.css">
+               <children>
+                  <RadioButton fx:id="rb1" mnemonicParsing="false" onAction="#Numeros" stylesheets="@EstiloGeneral.css" text="Publicidad especifica a segmento">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="Pant4" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="rb2" mnemonicParsing="false" onAction="#Numeros" stylesheets="@EstiloGeneral.css" text="Publicidad general" toggleGroup="$Pant4" />
+                  <RadioButton fx:id="rb3" mnemonicParsing="false" onAction="#Numeros" stylesheets="@EstiloGeneral.css" text="No hace" toggleGroup="$Pant4" />
+               </children>
+            </VBox>
+            <Button id="BotonAtras" layoutX="95.0" layoutY="577.0" mnemonicParsing="false" onAction="#Regresar" prefHeight="50.0" prefWidth="58.0" stylesheets="@EstiloGeneral.css" />
+            <Button id="BotonSiguiente" layoutX="790.0" layoutY="577.0" mnemonicParsing="false" onAction="#siguiente4" prefHeight="50.0" prefWidth="58.0" stylesheets="@EstiloGeneral.css" />
+            <Label id="Circulo" layoutX="100.0" layoutY="98.0" prefHeight="84.0" prefWidth="87.0" stylesheets="@EstiloGeneral.css" text="4" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

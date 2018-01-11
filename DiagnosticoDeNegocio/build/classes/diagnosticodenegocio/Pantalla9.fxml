@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diagnosticodenegocio.Pantalla9Controller">
+   <children>
+      <AnchorPane prefHeight="800.0" prefWidth="1024.0">
+         <children>
+            <Label layoutX="130.0" layoutY="76.0" prefHeight="36.0" prefWidth="836.0" stylesheets="@EstiloGeneral.css" text="¿Como mantiene las relaciones con sus clientes adquiridos? ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <VBox layoutX="150.0" layoutY="148.0" prefHeight="200.0" prefWidth="666.0" styleClass="VBox" stylesheets="@EstiloGeneral.css">
+               <children>
+                  <RadioButton mnemonicParsing="false" stylesheets="@EstiloGeneral.css" text="Tiene una estrategia clara y definida y la desarrolla activamente.">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="Pant9" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton mnemonicParsing="false" stylesheets="@EstiloGeneral.css" text="Tiene una estrategia clara y definida pero NO la desarrolla activamente." toggleGroup="$Pant9" />
+                  <RadioButton mnemonicParsing="false" stylesheets="@EstiloGeneral.css" text="Tiene una idea concreta acerca de las estrategias" toggleGroup="$Pant9" />
+                  <RadioButton mnemonicParsing="false" stylesheets="@EstiloGeneral.css" text="Tiene una idea vaga acerca de las estrategias" toggleGroup="$Pant9" />
+                  <RadioButton mnemonicParsing="false" stylesheets="@EstiloGeneral.css" text="No tiene clara la estrategia" toggleGroup="$Pant9" />
+               </children>
+            </VBox>
+            <Button layoutX="75.0" layoutY="600.0" mnemonicParsing="false" text="Anterior" />
+            <Button layoutX="770.0" layoutY="600.0" mnemonicParsing="false" onAction="#siguiente9" text="Siguiente" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

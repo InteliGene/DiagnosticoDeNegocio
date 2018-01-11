@@ -1,0 +1,195 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 21, 2017, 8:14:29 PM
+    Author     : InteliGeneMacbook1
+*/
+*{
+    -fx-gris: lightgray;
+    -fx-font-family: "Gotham Medium";
+}
+@font-face {
+    
+    src: url("../../estilogeneral/GothamMedium.ttf");
+    
+}
+
+#Promedio{
+    -fx-background-color: white;
+    -fx-background-radius: 150;
+    -fx-border-color: black;
+    -fx-border-radius: 130;
+    -fx-border-width: 0;
+    -fx-alignment: CENTER;
+}
+
+
+
+#Grafica{
+    -fx-rotate:90;
+}
+.default-color0.chart-bar { 
+    -fx-bar-fill: #BF0411; 
+}
+.default-color1.chart-bar { 
+    -fx-bar-fill: #D8D9DD; 
+}
+.default-color2.chart-bar { 
+    -fx-bar-fill: #C2C3C9; 
+}
+.default-color3.chart-bar { 
+    -fx-bar-fill: #AEADB3; 
+}
+.default-color4.chart-bar { 
+    -fx-bar-fill: #3B3B3A; 
+}
+
+
+.default-color0.chart-pie { -fx-pie-color: black; }
+.default-color1.chart-pie { -fx-pie-color: transparent;}
+
+.chart-legend{
+    -fx-opacity: 0;
+}
+
+
+.bar-legend-symbol {
+    -fx-background-color: transparent;
+    -fx-opacity: 0;
+    
+}
+
+/*.chart-legend-symbol {
+   -fx-background-color:  transparent;
+   -fx-stroke: transparent;
+}*/
+
+.axis:bottom{
+    -fx-font-family: "Century Gothic";
+    -fx-tick-mark-visible: false;
+    -fx-font: bold;
+}
+.axis:left{
+    -fx-tick-mark-visible: false;
+    -fx-tick-labels-visible: false;
+    
+}
+
+.axis:left > .axis-minor-tick-mark{
+    -fx-stroke: transparent;
+}
+.stacked-bar-chart:vertical > .chart-content > .chart-plot-background{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
+.stacked-bar-chart:vertical > .chart-content > .chart-vertical-zero-line{
+    -fx-stroke:transparent;
+}
+.stacked-bar-chart:vertical > .chart-content > .chart-horizontal-zeroline{
+    -fx-stroke:transparent;
+    -fx-opacity: 0;
+}
+.chart-horizontal-zero-line {
+    -fx-stroke: transparent;
+}
+.chart-vertical-zero-line{
+    -fx-stroke: red;
+}
+
+
+.chart-horizontal-grid-lines{
+    -fx-stroke: transparent;
+} 
+.chart-vertical-grid-lines{
+    -fx-stroke: transparent;
+} 
+
+
+
+
+
+/*.chart > .chart-title *{
+    -fx-font-size: 25px;
+    -fx-font-family : "Gotham Medium" ;
+    
+
+}*/
+
+
+
+
+#BotonSiguiente{
+   -fx-background-image: url("../Resources/Imagenes/BotonSiguiente.png");
+   -fx-background-color: transparent;
+    -fx-background-size: 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+#BotonAtras{
+   -fx-background-image: url("../Resources/Imagenes/BotonAtras.png");
+   -fx-background-color: transparent;
+    -fx-background-size: 100%;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+.label{
+   -fx-alignment: CENTER;
+}
+
+.label > .text {
+    -fx-font-family : "Century Gothic";
+    -fx-font-size: 28;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+    
+}
+.radio-button > .text{
+    -fx-font-family : "Century Gothic";
+    -fx-font-size: 18;
+}
+.radio-button > .radio{
+   -fx-border-color: -fx-gris;
+   -fx-border-radius: 9;
+   -fx-background-color: white;
+   -fx-border-width: 2;
+}
+.VBox{
+    -fx-spacing: 100;
+    
+}
+.circle{
+    -fx-fill: -fx-gris;
+} 
+
+#Circulo{
+    -fx-background-color: lightgray;
+    -fx-background-radius: 50;
+    -fx-border-color: black;
+    -fx-border-radius: 150;
+    -fx-border-width: 3;
+}
+
+.label.MiLabel{
+    
+}
+#labelJefe{
+    
+}
+.radio-button{
+  
+    
+}
+.VBox{
+    -fx-spacing: 15;
+}
+.VBox .radio-button{
+    
+}
+.combo-box > .arrow-button > .arrow {
+   
+}
